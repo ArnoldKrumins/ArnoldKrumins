@@ -4,25 +4,44 @@
     <meta charset="UTF-8">
     <title>Arnold Krumins - Creative Developer</title>
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/site.css"/>
+
 </head>
-<body>
+<body ng-app="arnoldkrumins">
+
+<gsap-base>
+
 <div class="container">
+
     <div class="row">
-        <div class="col-md-12">
-            <input type="text"/>
-         <H5>Arnold Krumins</H5>
+
+        <div class="col-md-6 col-sm-12">
+
+         <H5 move>Arnold Krumins</H5>
+
+        <div id="menu">
+            <ul stagger children="true">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+            </ul>
         </div>
 
+
+        </div>
     </div>
 
 </div>
+
+</gsap-base>
+
 </body>
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/gsap/src/minified/TimelineMax.min.js"></script>
 <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
-<script src="app/main.js"></script>
-
+<script src="dist/app.js"></script>
 </html>

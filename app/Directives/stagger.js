@@ -11,9 +11,9 @@ ak.directive('stagger',function(){
             
 
             if (scope.children){
-                TweenMax.staggerFrom(element.children(), 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+                TweenMax.staggerFrom(element.children(), 2, {scale:0.5, opacity:0, delay:1, ease:Elastic.easeOut, force3D:true}, 0.2);
             }else{
-                TweenMax.staggerFrom(element, 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+                TweenMax.staggerFrom(element, 2, {scale:0.5, opacity:0, delay:1, ease:Elastic.easeOut, force3D:true}, 0.2);
             }
 
 

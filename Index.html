@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="arnoldkrumins">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Arnold Krumins - Creative Developer</title>
@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/site.css"/>
 
 </head>
-<body ng-app="arnoldkrumins">
+<body blocker="">
 
 <gsap-base>
 
-<div class="container">
+<div class="container" ng-controller="ImageCtrl" ng-init="init()">
 
     <div class="row">
 
@@ -21,14 +21,25 @@
 
          <H5 move>Arnold Krumins</H5>
 
-        <div id="menu">
+        <!--<div id="menu">
             <ul stagger children="true">
                 <li>one</li>
                 <li>two</li>
                 <li>three</li>
                 <li>four</li>
             </ul>
-        </div>
+        </div>-->
+
+            <div photo-grid image-sections="imageSections" shuffled-sections="shuffledSections"  range="range()" show-countdown="showCountdown"></div>
+            <div id="countdown-container" count-down text="Ready!! 5 4 3 2 1 Go!!!" show="showCountdown" ></div>
+
+            <!--<img photo-grid src="Images/towerbridge-sm.jpg" alt=""/>-->
+
+
+            <!--<div id="photo-container">-->
+               <!--<img src="Images/towerbridge-sm.jpg" />-->
+            <!--</div>-->
+
 
 
         </div>
@@ -43,5 +54,18 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/gsap/src/minified/TimelineMax.min.js"></script>
 <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
-<script src="dist/app.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="app/main.js"></script>
+<script src="app/Controllers/ui.js"></script>
+<script src="app/Controllers/imageCtrl.js"></script>
+<script src="app/Directives/gsapBase.js"></script>
+<script src="app/Directives/move.js"></script>
+<script src="app/Directives/pulse.js"></script>
+<script src="app/Directives/countDown.js"></script>
+<script src="app/Directives/stagger.js"></script>
+<script src="app/Directives/blocker.js"></script>
+<script src="app/Directives/photoGrid.js"></script>
+<script src="app/Directives/photoGridVersionTwo.js"></script>
+
+<!--<script src="dist/app.js"></script>-->
 </html>

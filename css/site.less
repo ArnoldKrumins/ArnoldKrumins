@@ -1,9 +1,22 @@
 /**
  * Created by arnold.krumins on 17/10/2014.
  */
-@color-black: #000;
-@color-main: #07801c;
 
+
+@font-face{
+  font-family: 'MainFont';
+  src: url('../fonts/KOMIKAX_-webfont.eot');
+  src: url('../fonts/KOMIKAX_-webfont.eot?iefix') format('eot'),
+  url('../fonts/KOMIKAX_-webfont.woff') format('woff'),
+  url('../fonts/KOMIKAX_-webfont.ttf') format('truetype'),
+  url('../fonts/KOMIKAX_-webfont.svg#webfont') format('svg');
+}
+
+body {  }
+
+@color-black: #000;
+@color-main: #f6610c;
+@color-white: #FFF;
 
 .rounded-corners (@radius: 5px) {
   -webkit-border-radius: @radius;
@@ -11,12 +24,71 @@
   border-radius: @radius;
 }
 
+#container {
+  height:801px;
+  overflow:visible;
+  padding:0;
+  position:relative;
+}
+
+.photo-container{
+  display: block;
+  float: left;
+  margin: 15px 0;
+  padding: 0;
+  width: 350px; //portion of the image you wish to display
+  height: 50px; //portion of the image you wish to display
+  overflow: hidden; //hide the rest of the image
+
+
+}
+
+#countdown-container{
+  position:absolute;
+  width:800px;
+  height:300px;
+  margin:auto;
+  overflow:hidden;
+  top: 17%;
+  left: 16%;
+}
+
+
+#countdown-container h3 {
+  position:absolute;
+  font-weight:700;
+  margin:0;
+  padding:0;
+  width:800px;
+  text-align:center;
+  visibility:hidden;
+  font-size:120px;
+  top:65px;
+  color: #f6610c;
+  text-shadow: 11px 6px 10px  #373636;
+}
+#countdown-container h2 {
+  position:absolute;
+  color: #f6610c;
+  margin-left:24px;
+  margin-bottom:0px;
+  text-shadow: 11px 6px 10px  #373636;
+}
+
+/*.box{
+border: 2px solid @color-white;
+background: @color-main;
+width:50px;
+height:50px;
+}*/
 
 body{
-  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  position:relative;
+  font-family: 'MainFont', Arial, sans-serif;
   font-size:14px;
-  background: @color-black;
+  //background: @color-black;
   color:@color-main;
+//  background: url("../Images/green-network.jpg");
 }
 
 #menu{

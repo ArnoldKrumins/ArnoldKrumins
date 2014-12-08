@@ -30,9 +30,10 @@
             </ul>
         </div>-->
 
-            <div photo-grid image-sections="imageSections" shuffled-sections="shuffledSections"  range="range()" show-countdown="showCountdown"></div>
-            <div id="countdown-container" count-down text="Ready!! 5 4 3 2 1 Go!!!" show="showCountdown" ></div>
-
+            <div flip-manager show-countdown="showCountdown" image-indexes="imageIndexes" >
+                <div photo-grid image-sections="imageSections" shuffled-sections="shuffledSections"  range="range()" show-countdown="showCountdown"></div>
+                <div id="countdown-container" count-down text="Ready!! 5 4 3 2 1 Go!!!" show="showCountdown" ></div>
+            </div>
             <!--<img photo-grid src="Images/towerbridge-sm.jpg" alt=""/>-->
 
 
@@ -51,6 +52,7 @@
 
 </body>
 
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/gsap/src/minified/TimelineMax.min.js"></script>
 <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
@@ -59,11 +61,14 @@
 <script src="app/Controllers/ui.js"></script>
 <script src="app/Controllers/imageCtrl.js"></script>
 <script src="app/Directives/gsapBase.js"></script>
+<script src="app/Directives/endRepeat.js"></script>
 <script src="app/Directives/move.js"></script>
 <script src="app/Directives/pulse.js"></script>
 <script src="app/Directives/countDown.js"></script>
 <script src="app/Directives/stagger.js"></script>
 <script src="app/Directives/blocker.js"></script>
+<script src="app/Directives/flipManager.js"></script>
+<script src="app/Directives/flip.js"></script>
 <script src="app/Directives/photoGrid.js"></script>
 <script src="app/Directives/photoGridVersionTwo.js"></script>
 

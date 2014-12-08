@@ -5,7 +5,7 @@ ak.controller('ui',function($scope){
 
 $scope.data =[];
 
-$scope.showCountdown = false;
+
 
 
 

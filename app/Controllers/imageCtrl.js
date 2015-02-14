@@ -36,7 +36,10 @@ ak.controller('ImageCtrl', function($scope){
                 "height": $scope.gridHeight-1 + 'px',
                 "top":pos.top,
                 "left":pos.left,
-                "background": "url('Images/towerbridge-sm.jpg')" + '-' + pos.left + ' -' + pos.top
+                "background": "url('Images/towerbridge-sm.jpg')" + '-' + pos.left + ' -' + pos.top,
+                "data-toppos":pos.top,
+                "data-leftpos":pos.left
+
             }
 
             $scope.imageSections.push(image);
@@ -55,7 +58,10 @@ ak.controller('ImageCtrl', function($scope){
                 "height": $scope.gridHeight-1 + 'px',
                 "top":$scope.imagePositions[i].top,
                 "left":$scope.imagePositions[i].left,
-                "background": "url('Images/towerbridge-sm.jpg')" + '-' + $scope.imageShuffledPositions[i].left + ' -' + $scope.imageShuffledPositions[i].top
+                "background": "url('Images/towerbridge-sm.jpg')" + '-' + $scope.imageShuffledPositions[i].left + ' -' + $scope.imageShuffledPositions[i].top,
+                "data-toppos":$scope.imageShuffledPositions[i].top,
+                "data-leftpos":$scope.imageShuffledPositions[i].left
+
             }
 
             $scope.shuffledSections.push(image);

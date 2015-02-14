@@ -12,8 +12,8 @@ ak.directive('flip',function(){
                 scope.$digest();
                 if(scope.index === idx){
 
-                    TweenLite.to(element.children()[0], 1.2, {rotationY:180, ease:Back.easeOut});
-                    TweenLite.to(element.children()[1], 1.2, {rotationY:0, ease:Back.easeOut});
+                    TweenMax.to(element.children()[0], 1.2, {rotationY:180, ease:Back.easeOut});
+                    TweenMax.to(element.children()[1], 1.2, {rotationY:0, ease:Back.easeOut});
 
                 }
 

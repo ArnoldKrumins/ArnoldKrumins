@@ -19,7 +19,7 @@
 
         <div class="col-md-6 col-sm-12">
 
-         <H5 move>Arnold Krumins</H5>
+         <!--<H5 move>Arnold Krumins</H5>-->
 
         <!--<div id="menu">
             <ul stagger children="true">
@@ -30,9 +30,11 @@
             </ul>
         </div>-->
 
+
+
             <div flip-manager show-countdown="showCountdown" image-indexes="imageIndexes" >
-                <div photo-grid image-sections="imageSections" shuffled-sections="shuffledSections"  range="range()" show-countdown="showCountdown"></div>
-                <div id="countdown-container" count-down text="Ready!! 5 4 3 2 1 Go!!!" show="showCountdown" ></div>
+                <div photo-grid image-sections="imageSections" shuffled-sections="shuffledSections"  range="range()" show-countdown="showCountdown" grid-rows="6" grid-columns="5" grid-height="100" grid-width="196" ></div>
+                <!--<div id="countdown-container" count-down text="Ready!! 5 4 3 2 1 Go!!!" show="showCountdown" ></div>-->
             </div>
             <!--<img photo-grid src="Images/towerbridge-sm.jpg" alt=""/>-->
 
@@ -53,9 +55,28 @@
 </body>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/gsap/src/minified/TimelineMax.min.js"></script>
+
+<script src="bower_components/gsap/src/minified/plugins/CSSPlugin.min.js"></script>
+<script src="bower_components/gsap/src/minified/utils/Draggable.min.js"></script>sss
 <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
+<script src="bower_components/gsap/src/minified/plugins/ThrowPropsPlugin.min.js"></script>
+<script src="bower_components/gsap/src/minified/TimelineMax.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script src="bower_components/gsap/src/minified/plugins/ThrowPropsPlugin.min.js"></script>-->
+
+
 <script src="bower_components/underscore/underscore-min.js"></script>
 <script src="app/main.js"></script>
 <script src="app/Controllers/ui.js"></script>

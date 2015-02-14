@@ -22,22 +22,7 @@ ak.directive('flipManager',function($timeout,$interval,$rootScope){
                 if($scope.showCountdown){
 
                     var limit = $scope.imageIndexes.length;
-
                     $interval($scope.update,150,limit);
-
-
-//                    for(var i = 0;i< limit ;i++)
-//                    {
-//
-//
-//                        $timeout(function($scope){
-//                            var idx = $scope.imageIndexes[i];
-//                            $rootScope.$broadcast('flip-image',idx);
-//                        },1000)
-//
-//
-//
-//                    }
 
                 }
 
